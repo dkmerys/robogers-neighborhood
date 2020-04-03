@@ -12,21 +12,14 @@
 $(document).ready(function() {
   $("#converter").submit(function(event) {
     event.preventDefault();
-    
+ 
     var userNumber = parseInt($("#number").val())
     
     if (isNaN(userNumber)) {
-      result = "Please enter a number."
-    } else {
-      result = userNumber
-    };
+    $("#output").append("Mr. Robogers only understands numbers. He is a robot after all. Please enter a number.")
+    $(".well").show();
+    }; 
     
-    // var total = 0
-    // for (var currentNumber = 0; currentNumber <= userNumber; currentNumber += 1) {
-    //   total = currentNumber
-    //   $("#output").append("<li>" + total + "</li>")
-    // };
-
     for (var currentNumber = 0; currentNumber <= userNumber; currentNumber += 1) {
       var outputValue = currentNumber.toString()
         if (outputValue.includes("3")) {
@@ -37,9 +30,7 @@ $(document).ready(function() {
           outputValue = "beep!"
         }
       $("#output").append("<li>" + outputValue + "</li>")
+      $(".well").show();
     };
-
-    // $("#output").text(result);
-    $(".well").show;
   });
 });
