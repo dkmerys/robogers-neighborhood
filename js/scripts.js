@@ -20,11 +20,22 @@ $(document).ready(function() {
       result = userNumber
     };
     
-    var total = 0
+    // var total = 0
+    // for (var currentNumber = 0; currentNumber <= userNumber; currentNumber += 1) {
+    //   total = currentNumber
+    //   $("#output").append("<li>" + total + "</li>")
+    // };
+
     for (var currentNumber = 0; currentNumber <= userNumber; currentNumber += 1) {
-      total = currentNumber
-      $("#output").append("<li>" + total + "</li>")
-      // alert("total is: " + total)
+      var outputValue = currentNumber.toString()
+        if (outputValue.includes("3")) {
+          outputValue = "Won't you be my neighbor?"
+        } else if (outputValue.includes("2")) {
+          outputValue = "boop!"
+        } else if (outputValue.includes("1")) {
+          outputValue = "beep!"
+        }        }
+      $("#output").append("<li>" + outputValue + "</li>")
     };
 
     // $("#output").text(result);
