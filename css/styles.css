@@ -1,10 +1,19 @@
 .well {
   display: none;
-  background-image: url("../img/roborogers.jpg");
-  background-repeat: no-repeat;
+  /* background-image: url("../img/roborogers.jpg"); */
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
-
+h3 {
+  font-family: 'Roboto Mono', monospace;
+}
 #list {
   list-style: none;
+}
+
+body {
+  background-image: url("../img/rogers-wallpaper.png");
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
