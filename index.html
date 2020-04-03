@@ -10,22 +10,24 @@
   <title>Mr. Roboger's Neighborhood</title>
   <body>
     <div class="container">
-      <form id="converter">
-        <div class="form-group">
-          <label for="number">Mr. Roboger can only respond to numbers. Enter a number to receive his response.</label>
-          <input type="text" class="form-control" id="number">
-        </div>
-        <div>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </div>
-      </form>
-      <div class="well">
-        <label for="output">Here's his reply:</label>
-        <h3>
-          <ul id="list">
-            <span id="output"></span>
-          </ul>
-        </h3>
+      <div class="row">
+        <form id="converter">
+          <div class="form-group col-md-2">
+            <label for="number">Mr. Roboger can only respond to numbers. Enter a number to receive his response.</label>
+            <input type="text" class="form-control" id="number">
+          </div>
+          <div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </form>
+        <div class="well col-md-10">
+          <label for="output">Here's his reply:</label>
+            <h3>
+              <ul id="list">
+                <span id="output"></span>
+              </ul>
+            </h3>
+        </div>  
       </div>
     </div>
   </body>

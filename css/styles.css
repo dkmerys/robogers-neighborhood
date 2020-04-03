@@ -1,6 +1,9 @@
 .well {
   display: none;
+  background-image: url("../img/roborogers.jpg");
+  background-repeat: no-repeat;
 }
+
 
 #list {
   list-style: none;
