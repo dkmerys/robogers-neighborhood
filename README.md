@@ -1,6 +1,6 @@
 # _Mr. Robogers' Neighborhood_
 
-#### _HTML, CSS, & JavaScript Exercise for Epicodus, 03.27.2020_
+#### _HTML, CSS, & JavaScript Exercise for Epicodus, 04.03.2020_
 
 #### By _**Daniel Merys**_
 
@@ -10,18 +10,19 @@ _This website is designed to return any number a user enters into an automated r
 
 #### Spec - Ignores non-number inputs
 ##### input: "Hi!"
-##### ouput: "Mr. Robogers only understands numbers. Please enter a number and try again."
+##### ouput: "Mr. Robogers only understands numbers. He is a robot after all. Please enter a number."
 
 #### Spec - Returns a range of numbers from 0 to the user's input
 ##### input: "4"
 ##### ouput: "0, 1, 2, 3, 4"
 
-#### Spec Replaces numbers containing a "3" with "Won't you be my neighbor?"
+#### Spec - Replaces numbers containing a "3" with "Won't you be my neighbor?"
 ##### input: "5"
+##### ouput: "0, beep!, boop!, Won't you be my neighbor?, 4, 5"
 
+#### Spec - Replaces numbers containing a "2" with "boop!"
 ##### input: "2"
 ##### ouput: "0, beep!, boop!"
-##### ouput: "0, beep!, boop!, Won't you be my neighbor?, 4, 5"
 
 #### Spec - Replaces numbers containing a "1" with "beep!"
 ##### input: "1"

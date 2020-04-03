@@ -1,14 +1,3 @@
-// Business Logic
-
-
-
-
-
-
-
-
-// UI Logic
-
 $(document).ready(function() {
   $("#converter").submit(function(event) {
     event.preventDefault();
@@ -31,6 +20,6 @@ $(document).ready(function() {
         }
       $("#output").append("<li>" + outputValue + "</li>")
     };
-    $(".well").slideDown(1000);
+    $(".well").fadeIn(1000);
   });
 });
