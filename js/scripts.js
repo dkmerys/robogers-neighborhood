@@ -17,7 +17,6 @@ $(document).ready(function() {
     
     if (isNaN(userNumber)) {
     $("#output").append("Mr. Robogers only understands numbers. He is a robot after all. Please enter a number.")
-    $(".well").show();
     }; 
     
     for (var currentNumber = 0; currentNumber <= userNumber; currentNumber += 1) {
@@ -30,7 +29,7 @@ $(document).ready(function() {
           outputValue = "beep!"
         }
       $("#output").append("<li>" + outputValue + "</li>")
-      $(".well").show();
     };
+    $(".well").slideDown(1000);
   });
 });
