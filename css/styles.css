@@ -1,15 +1,16 @@
 .well {
   display: none;
   background-color: rgba(255, 255, 255, 0.4);
-  background-image: url("../img/roborogers.jpg");
+  /* background-image: url("../img/roborogers.jpg");
   background-position: right center;
   background-size: 50% 100%;
-  background-repeat: no-repeat;
-  margin-top: 200px;
+  background-repeat: no-repeat; */
+  margin-top: 75px;
 }
 
-h3 {
-  font-family: 'Roboto Mono', monospace;
+h4 {
+  font-family: 'Press Start 2P', cursive;
+
 }
 #list {
   list-style: none;
@@ -20,4 +21,21 @@ body {
   /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: fixed;
+}
+
+#instructions {
+  font-family: 'Loved by the King', cursive;
+  font-size: x-large;
+  /* background-color: rgba(255, 255, 255, 0.4); */
+  margin-top: 200px;
+}
+
+#reply {
+  font-family: 'Loved by the King', cursive;
+  font-size: x-large;
+}
+
+button {
+  font-family: 'Loved by the King', cursive;
 }
