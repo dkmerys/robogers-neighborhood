@@ -6,10 +6,29 @@
 
 ## Description
 
-_This website is rudimentary example of HTML, CSS, Bootstrap, Jquery, and JavaScript skills learned in the first 2 weeks of Epicodus training._
+_This website is designed to return any number a user enters into an automated response using the following rules.
+#### Spec - Ignores non-number inputs
+##### input: "Hi!"
+##### ouput: "Please enter a number."
 
-_https://github.com/dkmerys/Prog-Lang-Suggest_
-_https://dkmerys.github.io/Prog-Lang-Suggest_
+#### Spec - Returns a range of numbers from 0 to the user's input
+##### input: "4"
+##### ouput: "0, 1, 2, 3, 4"
+
+#### Spec - Replaces numbers containing a "1" with "beep!"
+##### input: "1"
+##### ouput: "0, beep!"
+
+#### Spec - Replaces numbers containing a "2" with "boop!"
+##### input: "2"
+##### ouput: "0, beep!, boop!"
+
+#### Spec Replaces numbers containing a "3" with "Won't you be my neighbor?"
+##### input: "5"
+##### ouput: "0, beep!, boop!, Won't you be my neighbor?, 4, 5"
+
+_https://github.com/dkmerys/robogers-neighborhood_
+_https://dkmerys.github.io/robogers-neighborhood_
 
 
 ## Setup/Installation Requirements
