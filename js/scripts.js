@@ -31,10 +31,8 @@ $(document).ready(function() {
         if (outputValue.includes("3")) {
           outputValue = "Won't you be my neighbor?"
         } else if (outputValue.includes("2")) {
-          outputValue = "boop!"
-        } else if (outputValue.includes("1")) {
           outputValue = "beep!"
-        }        }
+        }
       $("#output").append("<li>" + outputValue + "</li>")
     };
 
