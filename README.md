@@ -1,4 +1,4 @@
-# _My Portfolio_
+# _Mr. Robogers' Neighborhood_
 
 #### _HTML, CSS, & JavaScript Exercise for Epicodus, 03.27.2020_
 
@@ -6,10 +6,11 @@
 
 ## Description
 
-_This website is designed to return any number a user enters into an automated response using the following rules.
+_This website is designed to return any number a user enters into an automated response using the following rules._
+
 #### Spec - Ignores non-number inputs
 ##### input: "Hi!"
-##### ouput: "Please enter a number."
+##### ouput: "Mr. Robogers only understands numbers. Please enter a number and try again."
 
 #### Spec - Returns a range of numbers from 0 to the user's input
 ##### input: "4"

@@ -12,16 +12,22 @@
 $(document).ready(function() {
   $("#converter").submit(function(event) {
     event.preventDefault();
-    var userNumber = parseInt("#number").val();
-    var result
-
-    if (numChecker(userNumber) === true) {
-      result = fuctionName(userNumber)
+    var userNumber = parseInt($("#number").val())
+    
+    if (isNaN(userNumber)) {
+      result = "Please enter a number."
     } else {
-      result = "Mr. Roboger only understands numbers. Please enter a number."
-    }
+      result = userNumber
+    };
+    
+    var total = 0
+    for (var currentNumber = 0; currentNumber <= userNumber; currentNumber += 1) {
+      total = currentNumber
+      $("#output").append("<li>" + total + "</li>")
+      // alert("total is: " + total)
+    };
 
-    $("#output").text(result);
+    // $("#output").text(result);
     $(".well").show;
   });
 });
