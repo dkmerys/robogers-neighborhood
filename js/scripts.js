@@ -12,11 +12,12 @@ var beepOrBoop = function(numberAsString) {
 };
 
 // UI Logic
+
 $(document).ready(function() {
   $("#converter").submit(function(event) {
     event.preventDefault();
     $("#output").empty()
-
+    
     var userNumber = parseInt($("#number").val())
     
     if (isNaN(userNumber)) {
