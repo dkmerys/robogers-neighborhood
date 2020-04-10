@@ -10,7 +10,7 @@ _This website is designed to return any number a user enters into an automated r
 
 #### Spec - Ignores non-number inputs
 - ##### input: "Hi!"
-- ##### ouput: "Mr. Robogers only understands numbers. He is a robot after all. Please enter a number."
+- ##### output: "Mr. Robogers only understands numbers. He is a robot after all. Please enter a number."
 
 #### Spec - Returns a range of numbers from 0 to the user's input**
 - ##### input: "4"

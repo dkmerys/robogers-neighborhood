@@ -11,7 +11,15 @@ var beepOrBoop = function(numberAsString) {
   };
 };
 
+
 // UI Logic
+var roboSpeak = function(userNumber) {
+  for (var i = 0; i <= userNumber; i += 1) {
+    var outputValue = i.toString()
+    var results = beepOrBoop(outputValue);
+    $("#output").append("<li>" + results + "</li>")
+  };
+};
 
 $(document).ready(function() {
   $("#converter").submit(function(event) {
@@ -22,14 +30,11 @@ $(document).ready(function() {
     
     if (isNaN(userNumber)) {
       $("#output").append("Mr. Robogers only understands numbers. He is a robot after all. Please enter a number.")
-    }; 
-    
-    for (var currentNumber = 0; currentNumber <= userNumber; currentNumber += 1) {
-      var outputValue = currentNumber.toString()
-      var results = beepOrBoop(outputValue);
-      $("#output").append("<li>" + results + "</li>")
+    } else {
+      roboSpeak(userNumber)
     };
-    $(".well").fadeIn(1000);
-    $("input#number").val("");
-  });
+
+      $(".well").fadeIn(1000);
+      $("input#number").val("");
+    });
 });
